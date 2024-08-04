@@ -29,3 +29,4 @@ include(":olympia:presentation:home")
 include(":olympia:presentation:profile")
 
 include(":mfa:auth")
+include(":mfa:main")
