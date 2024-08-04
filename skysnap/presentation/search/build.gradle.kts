@@ -36,6 +36,7 @@ android {
 
 dependencies {
     implementation(project(":skysnap:domain"))
+    implementation(project(":core:ui"))
     implementation(libs.hilt.android)
     ksp(libs.bundles.hilt)
     implementation(libs.bundles.ui)

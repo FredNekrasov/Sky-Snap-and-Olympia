@@ -33,6 +33,7 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:ui"))
     implementation(libs.bundles.ui)
     implementation(libs.lottie)
     testImplementation(libs.junit)
