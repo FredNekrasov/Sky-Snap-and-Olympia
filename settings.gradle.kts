@@ -30,3 +30,5 @@ include(":olympia:presentation:profile")
 
 include(":mfa:auth")
 include(":mfa:main")
+
+include(":skysnap:domain")
