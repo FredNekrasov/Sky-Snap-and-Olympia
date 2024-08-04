@@ -36,6 +36,7 @@ android {
 
 dependencies {
     implementation(project(":olympia:domain"))
+    implementation(project(":core:ui"))
     implementation(libs.hilt.android)
     ksp(libs.bundles.hilt)
     implementation(libs.bundles.ui)

@@ -1,12 +1,10 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
-    alias(libs.plugins.hilt)
-    alias(libs.plugins.ksp)
 }
 
 android {
-    namespace = "com.fredprojects.olympia.data"
+    namespace = "com.fredprojects.core.ui"
     compileSdk = 34
 
     defaultConfig {
@@ -32,10 +30,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":core:database"))
-    implementation(project(":olympia:domain"))
-    implementation(libs.hilt.android)
-    ksp(libs.bundles.hilt)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
 }
