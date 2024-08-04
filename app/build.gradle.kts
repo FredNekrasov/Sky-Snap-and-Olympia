@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -20,28 +22,38 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
+            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
 }
 
 dependencies {
+    implementation(project(":mfa:auth"))
+    implementation(project(":mfa:main"))
 
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.material)
-    implementation(libs.androidx.activity)
-    implementation(libs.androidx.constraintlayout)
+    implementation(project(":olympia:data"))
+    implementation(project(":olympia:domain"))
+    implementation(project(":olympia:presentation:auth"))
+    implementation(project(":olympia:presentation:home"))
+    implementation(project(":olympia:presentation:profile"))
+
+    implementation(project(":skysnap:data"))
+    implementation(project(":skysnap:domain"))
+    implementation(project(":skysnap:presentation:main"))
+    implementation(project(":skysnap:presentation:search"))
+    implementation(project(":skysnap:presentation:tickets"))
+
+    implementation(libs.hilt.android)
+    ksp(libs.bundles.hilt)
+    implementation(libs.bundles.app)
+    implementation(libs.bundles.navigation)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
