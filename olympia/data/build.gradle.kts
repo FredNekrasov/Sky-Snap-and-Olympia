@@ -32,11 +32,10 @@ android {
 }
 
 dependencies {
+    implementation(project(":core:database"))
     implementation(project(":olympia:domain"))
     implementation(libs.hilt.android)
     ksp(libs.bundles.hilt)
-    implementation(libs.bundles.room)
-    ksp(libs.androidx.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
 }
