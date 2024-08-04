@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -30,6 +32,11 @@ android {
 }
 
 dependencies {
+    implementation(project(":olympia:domain"))
+    implementation(libs.hilt.android)
+    ksp(libs.bundles.hilt)
+    implementation(libs.bundles.room)
+    ksp(libs.androidx.room.compiler)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
 }

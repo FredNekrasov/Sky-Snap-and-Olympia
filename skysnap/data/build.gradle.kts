@@ -1,6 +1,9 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.serialization)
+    alias(libs.plugins.hilt)
+    alias(libs.plugins.ksp)
 }
 
 android {
@@ -30,6 +33,10 @@ android {
 }
 
 dependencies {
+    implementation(project(":skysnap:domain"))
+    implementation(libs.hilt.android)
+    ksp(libs.bundles.hilt)
+    implementation(libs.bundles.serialization)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
 }
