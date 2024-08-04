@@ -33,3 +33,4 @@ include(":mfa:main")
 
 include(":skysnap:domain")
 include(":skysnap:data")
+include(":skysnap:presentation:main")
