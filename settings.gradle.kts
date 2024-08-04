@@ -22,6 +22,8 @@ dependencyResolutionManagement {
 rootProject.name = "SkySnap"
 include(":app")
 
+include(":core:database")
+
 include(":olympia:domain")
 include(":olympia:data")
 include(":olympia:presentation:auth")
