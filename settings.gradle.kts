@@ -32,3 +32,4 @@ include(":mfa:auth")
 include(":mfa:main")
 
 include(":skysnap:domain")
+include(":skysnap:data")
