@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Registration -->
+    <string name="choose_avatar">Выберите один из встроенных аватаров</string>
+    <string name="avatar">Аватар</string>
+    <string name="surname">Фамилия</string>
+    <string name="name">Имя</string>
+    <string name="patronymic">Отчество</string>
+    <string name="account_does_not_exist">Аккаунт не существует</string>
+    <!-- Toolbar -->
+    <string name="dark">Ночной режим</string>
+    <string name="light">Дневной режим</string>
+    <string name="remove_toolbar">Скрыть верхнюю панель</string>
+    <!-- Bottom Navigation Menu -->
+    <string name="account_info">Информация об аккаунте</string>
+    <string name="remove_bnv">Скрыть нижнюю панель</string>
+    <!-- Drawer Navigation Menu -->
+    <string name="settings">Настройки</string>
+    <string name="recovery_toolbar">Восстановить верхнюю панель</string>
+    <string name="recovery_bnv">Восстановить нижнюю панель</string>
+    <string name="change_language">Изменить язык</string>
+    <string name="transition">Навигация</string>
+    <string name="to_games">Игры</string>
+</resources>
