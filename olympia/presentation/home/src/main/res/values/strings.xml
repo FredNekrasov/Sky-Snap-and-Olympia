@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ОЛИМПИЯ</string>
+    <!-- Bottom navigation menu -->
+    <string name="training">Тренировки</string>
+    <string name="my_health">Мое здоровье</string>
+    <string name="profile">Профиль</string>
+    <string name="home">Главная</string>
+    <!-- Drawer navigation menu -->
+    <string name="personal_data">Личная информация</string>
+    <string name="editing_data">Редактирование данных</string>
+    <string name="delete_account">Удалить аккаунт</string>
+    <string name="for_subscribers">Эта часть доступна только тем, кто оформил подписку</string>
+</resources>

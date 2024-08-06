@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Chat -->
+    <string name="chat">Chat</string>
+    <string name="enter_message">Enter something</string>
+    <string name="send_message">Send a message to %s fragment</string>
+    <!-- Crystal Ball -->
+    <string name="crystal_ball">Crystal ball</string>
+    <string name="divination">Divination</string>
+    <string name="start">Press here to start</string>
+    <!-- Animation -->
+    <string name="change_animation">Change Animation</string>
+    <string name="reverse_animation">Reverse Animation</string>
+</resources>
